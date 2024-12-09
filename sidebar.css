@@ -1,0 +1,74 @@
+.sidebar{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(16, 16, 16);
+    top: 60px;
+    bottom: 0;
+    left: 0;
+    width: 84px;
+    font-family: roboto, arial, sans-serif;
+    padding-top: 20px;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    z-index: 100;
+}
+
+
+.home-button{
+    height: 46px;
+    padding: 8px;
+    transition: background-color 0.18s,
+    border-radius 0.18s;
+}
+
+.home-button:hover{
+    background-color:rgba(110, 110, 110);
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+}
+
+.shorts-button{
+    height: 46px;
+    padding: 8px;
+    transition: background-color 0.18s,
+    border-radius 0.18s;
+}
+
+.shorts-button:hover{
+    background-color:rgba(110, 110, 110);
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+}
+
+.subscription-button{
+    height: 46px;
+    padding: 8px;
+    transition: background-color 0.18s,
+    border-radius 0.18s;
+}
+
+.subscription-button:hover{
+    background-color:rgba(110, 110, 110);
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+}
+
+.you-button{
+    height: 34px;
+    padding: 8px;
+    transition: background-color 0.18s,
+    border-radius 0.18s;
+}
+
+.you-button:hover{
+    background-color:rgba(110, 110, 110);
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+}

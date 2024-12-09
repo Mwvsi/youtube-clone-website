@@ -1,0 +1,317 @@
+.header-flexbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    margin-bottom: 10px;
+    background-color:rgb(16, 16, 16);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100; 
+}
+
+.left-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: left;
+    margin-left: 28px;
+}
+
+
+.menu-state{
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    margin-right: 30px;
+    height: 40px;
+    transition: background-color 0.18s;
+}
+
+.hamburger-menu{
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    margin-right: 30px;
+    height: 25px;
+    padding: 6px;
+    transition: background-color 0.18s,
+    border-radius 0.18s;
+}
+
+.hamburger-menu:hover{
+    background-color:rgba(110, 110, 110);
+    cursor: pointer;
+    border: none;
+    border-radius: 40px;
+}
+
+.logo{
+    height: 20px;
+    display: flex;
+    align-items: bottom;
+    justify-content: center;
+    margin-top: 4px;
+    padding: 4px;
+    border: none;
+    transition: box-shadow 0.18s,
+    border-radius 0.18s;
+}
+
+.logo:hover{
+    box-shadow: 1px 3px 3px rgba(110, 95, 95, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.middle-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: top;
+    flex: 1;
+    margin-left: 140px;
+    margin-right: 155px;
+    max-width: 640px;
+}
+
+.search-bar{
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+    background-color: rgb(12, 12, 12);
+    height: 36.8px;
+    font-family: roboto arial sans-serif;
+    display: flex;
+    flex: 1;
+    box-shadow: inline 2px 3px 3px rgba(110, 110, 110, 0.15);
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    padding-left: 20px;
+}
+
+.search-bar::placeholder{
+    font-family: roboto, sans-serif, arial;
+    font-size: 16px;
+}
+
+.searchbar-icon{
+    position: relative;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-style: solid;
+    background-color: #FFFFFF14;
+    height: 40px;
+    color: white;
+    border-color:gray;
+    border-width: 1px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 20px;
+}
+
+.searchbar-icon:hover{
+    cursor: pointer;
+}
+
+.searchbar-icon .tooltip{
+    position: absolute;
+    background-color: rgba( 0, 0, 0, 0.6);
+    color: white;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 4px;
+    bottom: -42px;
+    left: -2px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    font-size: 12px;
+}
+
+.searchbar-icon:hover .tooltip{
+    opacity: 1;
+}
+
+.search-icon{
+    height: 20px;
+    width: 20px;
+}
+
+.microphone{
+    padding: 3px;
+    align-items: center;
+    display: flex;
+}
+
+.voice-search{
+    position: relative;
+    margin-left: 20px;
+    border-radius: 50px; 
+    background-color:black;
+    border-radius: 50px; 
+    border: 0;
+    background-color: #FFFFFF14;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    transition: backgound-color 0.18s;
+}
+
+.voice-search:hover{
+    background-color: rgb(110, 110, 110);
+    cursor: pointer;
+}
+
+.voice-search .tooltip{
+    position: absolute;
+    background-color: rgba( 0, 0, 0, 0.6);
+    color: white;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 4px;
+    bottom: -42px;
+    left: -32px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    font-size: 12px;
+    width: 96px;
+}
+
+.voice-search:hover .tooltip{
+    opacity: 1;
+}
+
+
+.right-section{
+    width: 225px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.create-icon{
+    height: 30px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    transition: background-color 0.18s,
+    border-radius 0.18s;
+}
+
+.create-icon:hover{
+    background-color:rgba(110, 110, 110);
+    cursor: pointer;
+    border: none;
+    border-radius: 120px;
+}
+
+.create-div{
+    position: relative;
+    font-family: roboto, arial, sans-serif;
+}
+
+.create-div .tooltip{
+    position: absolute;
+    background-color: rgba( 0, 0, 0, 0.6);
+    color: white;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 4px;
+    bottom: -42px;
+    left: -2px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    font-size: 12px;
+    font-style: normal;
+}
+
+.create-div:hover .tooltip{
+    opacity: 1;
+}
+
+.notification-div{
+    position: relative;
+    font-family: roboto, arial, sans-serif;
+}
+
+.notification-div .tooltip{
+    position: absolute;
+    background-color: rgba( 0, 0, 0, 0.6);
+    color: white;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 4px;
+    bottom: -42px;
+    left: -18px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    font-size: 12px;
+    font-style: normal;
+}
+
+.notification-div:hover .tooltip{
+    opacity: 1;
+}
+
+.notification-bell{
+    height:30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    transition: background-color 0.18s,
+    border-radius 0.18s;
+}
+
+.notification-bell:hover{
+    background-color:rgba(110, 110, 110);
+    cursor: pointer;
+    border: none;
+    border-radius: 40px;
+}
+
+.notification-count{
+    background-color: rgb(204, 0, 0);
+    color: white;
+    font-family: roboto, arial, sans-serif;
+    font-size: 14px;
+    padding-left: 4px;
+    padding-right: 6px;
+    border-radius: 50px;
+    position: absolute;
+    top: 6px;
+    right: 2px;
+    align-items: center;
+}
+
+.mwvsis-pfp{
+    height: 40px;
+    padding: 4px;
+    border: none;
+    border-radius: 50px;
+}
+
+.mwvsis-pfp:hover{
+    cursor: pointer;
+}
